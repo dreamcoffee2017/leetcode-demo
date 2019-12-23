@@ -19,6 +19,8 @@
 
 package leetcode.editor.cn;
 
+import leetcode.editor.cn.node.TreeNode;
+
 public class MinimumDepthOfBinaryTreeTest {
 
     public static void main(String[] args) {
@@ -58,7 +60,7 @@ public class MinimumDepthOfBinaryTreeTest {
             if (x.left == null && x.right == null) {
                 if (min == 0 || min > h)
                     min = h;
-            }else {
+            } else {
                 if (min > 0 && h >= min)
                     return;
                 if (x.left != null)

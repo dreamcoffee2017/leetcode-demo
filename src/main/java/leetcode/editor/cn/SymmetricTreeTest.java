@@ -25,6 +25,8 @@
 
 package leetcode.editor.cn;
 
+import leetcode.editor.cn.node.TreeNode;
+
 public class SymmetricTreeTest {
 
     public static void main(String[] args) {

@@ -37,6 +37,8 @@
 
 package leetcode.editor.cn;
 
+import leetcode.editor.cn.node.TreeNode;
+
 public class SameTreeTest {
 
     public static void main(String[] args) {
