@@ -1,5 +1,5 @@
 # 配置
-kakazhu/3200247
+kakazhu/3
 tempFilePath=D:\project\leetcode-demo\src\main\java
 codeFileName=$!velocityTool.camelCaseName(${question.titleSlug})Test
 codeTemplate=${question.content}
