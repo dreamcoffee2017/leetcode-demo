@@ -1,5 +1,3 @@
-package leetcode.editor.cn.test;
-
 /**
  * Rar
  *
@@ -36,8 +34,9 @@ public class Rar {
         }
         StringBuilder s = new StringBuilder();
         String sub = sb.substring(index + 2, end);
-        for (int i = 0; i < num; i++)
+        for (int i = 0; i < num; i++) {
             s.append(sub);
+        }
         sb.replace(index, end + 1, s.toString());
         return index + s.length() - 1;
     }

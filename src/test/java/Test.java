@@ -1,5 +1,3 @@
-package leetcode.editor.cn.test;
-
 import java.util.Arrays;
 
 /**
