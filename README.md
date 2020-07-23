@@ -12,5 +12,5 @@
     },
     "leetcode.hideSolved": true,
     "leetcode.showDescription": "Both",
-    "leetcode.workspaceFolder": "$HOME/Work/Project/leetcode-demo/src/leetcode/",
+    "leetcode.workspaceFolder": "D:/Work/Project/leetcode-demo/src/leetcode/",
 ```
