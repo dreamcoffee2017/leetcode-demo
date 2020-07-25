@@ -59,26 +59,27 @@ package leetcode.easy;
  * 
  * 
  */
-
-// @lc code=start
-class Solution {
-    public int removeDuplicates(int[] nums) {
-        if (nums == null || nums.length == 0) {
-            return 0;
-        }
-        if (nums.length == 1) {
-            return 1;
-        }
-        int j = 0;
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] > nums[i - 1]) {
-                j++;
-                if (j < i) {
-                    nums[j] = nums[i];
+class 删除排序数组中的重复项 {
+    // @lc code=start
+    class Solution {
+        public int removeDuplicates(int[] nums) {
+            if (nums == null || nums.length == 0) {
+                return 0;
+            }
+            if (nums.length == 1) {
+                return 1;
+            }
+            int j = 0;
+            for (int i = 1; i < nums.length; i++) {
+                if (nums[i] > nums[i - 1]) {
+                    j++;
+                    if (j < i) {
+                        nums[j] = nums[i];
+                    }
                 }
             }
+            return j + 1;
         }
-        return j + 1;
     }
+    // @lc code=end
 }
-// @lc code=end

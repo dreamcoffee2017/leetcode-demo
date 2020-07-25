@@ -43,17 +43,19 @@ package leetcode.easy;
  * 
  */
 
+class 回文数 {
 // @lc code=start
-class Solution {
-    public boolean isPalindrome(int x) {
-        char[] array = String.valueOf(x).toCharArray();
-        int len = array.length;
-        for (int i = 0; i < len / 2; i++) {
-            if (array[i] != array[len - 1 - i]) {
-                return false;
+    class Solution {
+        public boolean isPalindrome(int x) {
+            char[] array = String.valueOf(x).toCharArray();
+            int len = array.length;
+            for (int i = 0; i < len / 2; i++) {
+                if (array[i] != array[len - 1 - i]) {
+                    return false;
+                }
             }
+            return true;
         }
-        return true;
     }
+    // @lc code=end
 }
-// @lc code=end

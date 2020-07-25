@@ -37,26 +37,27 @@ package leetcode.easy;
  * 所有输入只包含小写字母 a-z 。
  * 
  */
-
-// @lc code=start
-class Solution {
-    public String longestCommonPrefix(String[] strs) {
-        int len = strs.length;
-        if (len > 0) {
-            String f = strs[0];
-            int end = 0;
-            for (int i = 0; i < f.length(); i++) {
-                for (int j = 1; j < len; j++) {
-                    String s = strs[j];
-                    if (i == s.length() || s.charAt(i) != f.charAt(i)) {
-                        return f.substring(0, end);
+class 最长公共前缀 {
+    // @lc code=start
+    class Solution {
+        public String longestCommonPrefix(String[] strs) {
+            int len = strs.length;
+            if (len > 0) {
+                String f = strs[0];
+                int end = 0;
+                for (int i = 0; i < f.length(); i++) {
+                    for (int j = 1; j < len; j++) {
+                        String s = strs[j];
+                        if (i == s.length() || s.charAt(i) != f.charAt(i)) {
+                            return f.substring(0, end);
+                        }
                     }
+                    end++;
                 }
-                end++;
+                return f.substring(0, end);
             }
-            return f.substring(0, end);
+            return "";
         }
-        return "";
     }
+    // @lc code=end
 }
-// @lc code=end

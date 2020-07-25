@@ -29,21 +29,22 @@ package leetcode.easy;
  * 如果你已经实现复杂度为 O(n) 的解法，尝试使用更为精妙的分治法求解。
  * 
  */
-
-// @lc code=start
-class Solution {
-    public int maxSubArray(int[] nums) {
-        int max = nums[0], sum = 0;
-        for (int n : nums) {
-            sum += n;
-            if (sum > 0) {
-                max = Math.max(max, sum);
-            } else {
-                sum = 0;
-                max = Math.max(max, n);
+class 最大子序和 {
+    // @lc code=start
+    class Solution {
+        public int maxSubArray(int[] nums) {
+            int max = nums[0], sum = 0;
+            for (int n : nums) {
+                sum += n;
+                if (sum > 0) {
+                    max = Math.max(max, sum);
+                } else {
+                    sum = 0;
+                    max = Math.max(max, n);
+                }
             }
+            return max;
         }
-        return max;
     }
+    // @lc code=end
 }
-// @lc code=end

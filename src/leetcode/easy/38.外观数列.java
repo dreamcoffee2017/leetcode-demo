@@ -54,27 +54,28 @@ package leetcode.easy;
  * 2；类似 "1" 可以读作 "11"。所以答案是 "12" 和 "11" 组合在一起，也就是 "1211"。
  * 
  */
-
-// @lc code=start
-class Solution {
-    public String countAndSay(int n) {
-        StringBuilder r = new StringBuilder("1");
-        for (int i = 2; i <= n; i++) {
-            char[] a = r.toString().toCharArray();
-            r = new StringBuilder();
-            int j = 0;
-            int m = 1;
-            for (char c : a) {
-                j++;
-                if (j < a.length && c == a[j]) {
-                    m++;
-                } else {
-                    r.append(m).append(c);
-                    m = 1;
+class 外观数列 {
+    // @lc code=start
+    class Solution {
+        public String countAndSay(int n) {
+            StringBuilder r = new StringBuilder("1");
+            for (int i = 2; i <= n; i++) {
+                char[] a = r.toString().toCharArray();
+                r = new StringBuilder();
+                int j = 0;
+                int m = 1;
+                for (char c : a) {
+                    j++;
+                    if (j < a.length && c == a[j]) {
+                        m++;
+                    } else {
+                        r.append(m).append(c);
+                        m = 1;
+                    }
                 }
             }
+            return r.toString();
         }
-        return r.toString();
     }
+    // @lc code=end
 }
-// @lc code=end
