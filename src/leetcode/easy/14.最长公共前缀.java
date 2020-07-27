@@ -37,7 +37,7 @@ package leetcode.easy;
  * 所有输入只包含小写字母 a-z 。
  * 
  */
-class 最长公共前缀 {
+class LongestCommonPrefix {
     // @lc code=start
     class Solution {
         public String longestCommonPrefix(String[] strs) {

@@ -36,7 +36,7 @@ package leetcode.easy;
  * 
  * 
  */
-class 加一 {
+class PlusOne {
     // @lc code=start
     class Solution {
         public int[] plusOne(int[] digits) {

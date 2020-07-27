@@ -46,7 +46,7 @@ import java.util.Arrays;
  * 
  * 
  */
-class 搜索插入位置 {
+class SearchInsert {
     // @lc code=start
     class Solution {
         public int searchInsert(int[] nums, int target) {

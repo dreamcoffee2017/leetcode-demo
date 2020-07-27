@@ -59,7 +59,7 @@ package leetcode.easy;
  * 
  * 
  */
-class 删除排序数组中的重复项 {
+class RemoveDuplicates {
     // @lc code=start
     class Solution {
         public int removeDuplicates(int[] nums) {

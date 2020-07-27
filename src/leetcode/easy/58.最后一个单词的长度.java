@@ -30,7 +30,7 @@ package leetcode.easy;
  * 
  * 
  */
-class 最后一个单词的长度 {
+class LengthOfLastWord {
     // @lc code=start
     class Solution {
         public int lengthOfLastWord(String s) {

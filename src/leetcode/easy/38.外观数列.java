@@ -54,7 +54,7 @@ package leetcode.easy;
  * 2；类似 "1" 可以读作 "11"。所以答案是 "12" 和 "11" 组合在一起，也就是 "1211"。
  * 
  */
-class 外观数列 {
+class CountAndSay {
     // @lc code=start
     class Solution {
         public String countAndSay(int n) {

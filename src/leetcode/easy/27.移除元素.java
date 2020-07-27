@@ -64,7 +64,7 @@ package leetcode.easy;
  * 
  * 
  */
-class 移除元素 {
+class RemoveElement {
     // @lc code=start
     class Solution {
         public int removeElement(int[] nums, int val) {

@@ -43,7 +43,7 @@ package leetcode.easy;
  * 
  */
 
-class 回文数 {
+class IsPalindrome {
 // @lc code=start
     class Solution {
         public boolean isPalindrome(int x) {
