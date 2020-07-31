@@ -1,11 +1,5 @@
 package node;
 
-/**
- * TreeNode
- *
- * @author Administrator
- * @date 2019/12/16
- */
 public class TreeNode {
     public int val;
     public TreeNode left;

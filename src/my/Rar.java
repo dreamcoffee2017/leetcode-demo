@@ -1,11 +1,5 @@
 package my;
 
-/**
- * Rar
- *
- * @author Administrator
- * @date 2019/12/30
- */
 public class Rar {
 
     public static void main(String[] args) {
